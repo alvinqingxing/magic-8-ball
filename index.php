@@ -1,18 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
     <title>Magic 8 Ball</title>
   </head>
   <body>
     <form method="post">
-      <input type="text" name="question"" />
+      <input type="text" name="question" placeholder="Ask the Magic 8 Ball a question" />
       <input type="submit" value="Submit" />
     </form>
+    <img src="magic.png" width="250">
+    <h1><?= $_POST["question"]; ?></h1>
     <div>
     <?php
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        echo $_POST["question"];
         switch (rand(0, 19)) {
           case 0:
             $message = "It is certain.\n";
@@ -78,8 +81,9 @@
         }
     ?>
     </div>
-    <img src="magic.png">
-    <h1>Magic 8 Ball says</h1>
-    <?= $message ?>
+    <div>
+      <h1>Magic 8 Ball says</h1>
+      <?= $message ?>
+      </div>
   </body>
 </html>
