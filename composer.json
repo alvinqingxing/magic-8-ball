@@ -1,0 +1,12 @@
+{
+    "name": "alvin/magic-8-ball",
+    "description": "PHP Magic 8-Ball App",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alvin Lim",
+            "email": "alvinch@hawaii.edu"
+        }
+    ],
+    "require": {}
+}
