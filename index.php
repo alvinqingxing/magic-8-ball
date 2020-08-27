@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
-    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Magic 8-Ball</title>
   </head>
   <body>
     <form method="post">
-      <input type="text" name="question" placeholder="Ask the Magic 8 Ball a question" />
-      <input type="submit" value="Submit" />
+      <input type="text" name="question" placeholder="What is your question?" />
+      <input type="submit" value="Ask the Magic 8-Ball" />
     </form>
     <img src="magic.png" width="250">
-    <h1><?= $_POST["question"]; ?></h1>
+    <p><?= $_POST["question"]; ?></p>
     <div>
     <?php
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -82,7 +82,7 @@
     ?>
     </div>
     <div>
-      <h1>Magic 8 Ball says</h1>
+      <p class="response">The Magic 8-Ball says</p>
       <?= $message ?>
       </div>
   </body>

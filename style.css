@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative&display=swap");
+
+html body {
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  font-size: xx-large;
+  color: #282870;
+  opacity: 0.8;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img:hover {
+  transform: translate(5px, 5px);
+}
+
+input[type="text"] {
+  font-family: "Berkshire Swash", cursive;
+  font-size: x-large;
+  background-color: #dfe3eb;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  font-family: "Berkshire Swash", cursive;
+  font-size: x-large;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.response {
+  font-family: "Cinzel Decorative", cursive;
+}
