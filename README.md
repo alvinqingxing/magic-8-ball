@@ -1,1 +1,1 @@
-A Magic 8-Ball app written in PHP
+A Magic-8-Ball app written in PHP
